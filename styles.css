@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 25%;
+    overflow: hidden; /* Clearfix */
+}
+
+.float-example {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Clearfix for individual examples */
+}
+
+.float-left, .float-right {
+    width: 30%; /* Width to ensure alignment */
+    margin: 0 10px 10px 0; /* Margin for spacing */
+    float: left; /* Default float is left */
+    
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px; /* Adjusted margin for right float */
+}
+
+.float-none {
+    float: none;
+    width: 100%; /* Full width for non-floated images */
+    box-sizing: border-box;
+}
+
+.float-none img {
+    width: 48%; /* Adjust the width of images */
+    margin-right: 4%; /* Space between images */
+    display: inline-block; /* Ensure images stay on the same line */
+}
+
+.float-example img {
+    max-width: 25%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    vertical-align: middle; /* Align with text */
+}
+
+.float-example h2 {
+    margin-top: 0;
+}
+
+.float-example p {
+    margin: 10px 0;
+    overflow: hidden; /* Ensure text wraps properly around floats */
+}
